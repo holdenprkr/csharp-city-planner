@@ -6,6 +6,10 @@ namespace Planner
     {
         static void Main (string[] args)
         {
+            City Nashville = new City ("Nashville");
+            Nashville.SetYearEstablished (1706);
+            Nashville.SetMayor ("Holden Parker");
+
             Building FiveOneTwoEigth = new Building ("512 8th Avenue")
             {
                 Width = 100,
