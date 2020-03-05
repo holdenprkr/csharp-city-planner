@@ -41,9 +41,9 @@ namespace Planner
             ThreeSixFiveTwentyFourth.Purchase("Brenda Long");
             TwoOneJump.Purchase("Rose Wisotzky");
 
-            Nashville.addBuilding(FiveOneTwoEigth);
-            Nashville.addBuilding(ThreeSixFiveTwentyFourth);
-            Nashville.addBuilding(TwoOneJump);
+            Nashville.AddBuilding(FiveOneTwoEigth);
+            Nashville.AddBuilding(ThreeSixFiveTwentyFourth);
+            Nashville.AddBuilding(TwoOneJump);
 
             foreach (Building building in Nashville.Buildings)
             {

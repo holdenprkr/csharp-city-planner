@@ -20,7 +20,7 @@ namespace Planner
 
         public List<Building> Buildings = new List<Building>();
 
-        public void addBuilding(Building building)
+        public void AddBuilding(Building building)
         {
             Buildings.Add(building);
         }
