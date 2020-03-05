@@ -5,34 +5,34 @@ namespace Planner
 {
     public class Building
     {
-        public Building (string address)
+        public Building(string address)
         {
             _address = address;
         }
 
-        public void Design (string name)
+        public void Design(string name)
         {
             _designer = name;
         }
-        public void Construct ()
+        public void Construct()
         {
             _dateConstructed = DateTime.Now;
         }
 
-        public void Purchase (string name)
+        public void Purchase(string name)
         {
             _owner = name;
         }
 
-        public void Print ()
+        public void Print()
         {
-            Console.WriteLine (this._address);
-            Console.WriteLine ($"-----------------------");
-            Console.WriteLine ($"Designed by {this._designer}");
-            Console.WriteLine ($"Constructed on {this._dateConstructed}");
-            Console.WriteLine ($"Owned by {this._owner}");
-            Console.WriteLine ($"{this.Volume} cubic meters of space");
-            Console.WriteLine ("");
+            Console.WriteLine(this._address);
+            Console.WriteLine($"-----------------------");
+            Console.WriteLine($"Designed by {this._designer}");
+            Console.WriteLine($"Constructed on {this._dateConstructed}");
+            Console.WriteLine($"Owned by {this._owner}");
+            Console.WriteLine($"{this.Volume} cubic meters of space");
+            Console.WriteLine("");
         }
 
         private string _designer { get; set; }

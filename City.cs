@@ -5,37 +5,24 @@ namespace Planner
 {
     public class City
     {
-        public City (string name)
+        public City(string name, string mayor, int year)
         {
-            _name = name;
+            Name = name;
+            Mayor = mayor;
+            YearEstablished = year;
         }
 
-        public void SetMayor (string mayor)
+        public string Name { get; set; }
+
+        public string Mayor { get; set; }
+
+        public int YearEstablished { get; set; }
+
+        public List<Building> Buildings = new List<Building>();
+
+        public void addBuilding(Building building)
         {
-            _mayor = mayor;
+            Buildings.Add(building);
         }
-
-        public void SetYearEstablished (int year)
-        {
-            _yearEstablished = year;
-        }
-
-        private string _name { get; set; }
-
-        private string _mayor { get; set; }
-
-        private int _yearEstablished { get; set; }
-
-        // private List<List<string>> buildings;
-
-        // public List<List<string>> GetBuildings ()
-        // {
-        //     return buildings;
-        // }
-
-        // public void SetBuildings (List<List<string>> value)
-        // {
-        //     buildings = value;
-        // }
     }
 }
